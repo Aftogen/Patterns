@@ -1,7 +1,12 @@
 
 import furniture.*;
 
+/**
+ * My upgrade of Abstract factory pattern. Only one factory. Less code. Easy to add some new types of Furniture or Style.
+ */
+
 public class ImbaFactory {
+
     public static Furniture createFurniture(FurnitureType furnitureType, StyleType styleType) {
 
         //Null check
@@ -16,7 +21,7 @@ public class ImbaFactory {
             case TABLE:
                 return new Table(styleType);
             default:
-                throw new IllegalArgumentException("Wrong ");
+                throw new IllegalArgumentException("Wrong furnitureType");
         }
     }
 }

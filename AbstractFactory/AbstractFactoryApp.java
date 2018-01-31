@@ -2,7 +2,7 @@
 
 import furniture.*;
 
-public class Solution {
+public class AbstractFactoryApp {
 
     public static void main(String[] args) {
         Furniture furniture0 = ImbaFactory.createFurniture(FurnitureType.COUCH, StyleType.MODERN);
@@ -33,7 +33,6 @@ public class Solution {
         furniture8.getDescription();
 
         /*
-
         sout:
 
         This is modern couch
@@ -45,7 +44,6 @@ public class Solution {
         This is classic couch
         This is classic chair
         This is classic table
-
         */
     }
 }
