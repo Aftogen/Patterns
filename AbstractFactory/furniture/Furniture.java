@@ -1,7 +1,7 @@
 package furniture;
 
 public abstract class Furniture {
-    StyleType styleType;
+    private StyleType styleType;
 
     public Furniture(StyleType styleType) {
         this.styleType = styleType;

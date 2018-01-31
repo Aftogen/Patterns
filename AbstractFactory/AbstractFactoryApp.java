@@ -45,5 +45,39 @@ public class AbstractFactoryApp {
         This is classic chair
         This is classic table
         */
+
+        System.out.println("-----------------------------------------");
+
+        System.out.println("Classic collection:");
+        FurnitureCollection collection = new FurnitureCollection(StyleType.CLASSIC);
+        collection.printCollection();
+        collection.clearCollection();
+
+        System.out.println("Art collection:");
+        FurnitureCollection collection2 = new FurnitureCollection(StyleType.ART);
+        collection2.printCollection();
+        collection2.clearCollection();
+
+        System.out.println("Classic collection:");
+        FurnitureCollection collection3 = new FurnitureCollection(StyleType.MODERN);
+        collection3.printCollection();
+        collection3.clearCollection();
+        /*
+        sout:
+
+        Classic collection:
+        This is classic chair
+        This is classic couch
+        This is classic table
+        Art collection:
+        This is art chair
+        This is art couch
+        This is art table
+        Classic collection:
+        This is modern chair
+        This is modern couch
+        This is modern table
+        */
+
     }
 }
