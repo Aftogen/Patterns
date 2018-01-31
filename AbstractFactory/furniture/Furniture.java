@@ -1,0 +1,13 @@
+package furniture;
+
+public abstract class Furniture {
+    StyleType styleType;
+
+    public Furniture(StyleType styleType) {
+        this.styleType = styleType;
+    }
+
+    public void getDescription() {
+        System.out.println("This is " + styleType.name().toLowerCase() + " " + getClass().getSimpleName().toLowerCase());
+    }
+}
