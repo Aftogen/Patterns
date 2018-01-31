@@ -10,4 +10,9 @@ public abstract class Furniture {
     public void getDescription() {
         System.out.println("This is " + styleType.name().toLowerCase() + " " + getClass().getSimpleName().toLowerCase());
     }
+
+    public void testMethod(){
+        System.out.println("Furniture class");
+    }
+
 }

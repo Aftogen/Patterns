@@ -6,4 +6,8 @@ public class Couch extends Furniture {
         super(styleType);
     }
 
+    @Override
+    public void testMethod() {
+        System.out.println("I can on this couch");
+    }
 }

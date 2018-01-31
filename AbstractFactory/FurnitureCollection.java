@@ -1,5 +1,4 @@
 import furniture.*;
-
 import java.util.HashSet;
 
 public class FurnitureCollection {
